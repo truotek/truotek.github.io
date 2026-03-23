@@ -137,19 +137,44 @@ const year = new Date().getFullYear();
           </p>
         </div>
 
-        <div class="contact-actions">
+        <div class="contact-panel">
           <p class="contact-prompt">Contact us today for your free consultation.</p>
-          <a class="button button-primary" href="mailto:contact@truotek.com">
-            contact@truotek.com
-          </a>
+
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xreynbpq"
+            method="POST"
+          >
+            <label class="form-field">
+              <span>Name</span>
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+
+            <label class="form-field">
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+
+            <label class="form-field">
+              <span>Message</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+
+            <button class="button button-primary form-submit" type="submit">
+              Send message
+            </button>
+          </form>
+
+          <p class="contact-direct">
+            Prefer email? Reach us directly at
+            <a href="mailto:contact@truotek.com">contact@truotek.com</a>.
+          </p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Truotek</p>
-      <p>Software development consultancy</p>
-      <p>&copy; {year}</p>
+      <p>&copy; {year} Truotek</p>
     </footer>
   </div>
 </MainLayout>
