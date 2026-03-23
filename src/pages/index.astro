@@ -1,0 +1,166 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+
+const year = new Date().getFullYear();
+---
+
+<MainLayout description="Truotek is a software development consultancy for teams that need sharp thinking, pragmatic engineering, and disciplined delivery.">
+  <div class="page-shell">
+    <div class="ambient ambient-left"></div>
+    <div class="ambient ambient-right"></div>
+
+    <header class="site-header">
+      <a class="brand" href="/">Truotek</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Software development consultancy</p>
+          <h1>Build the right thing. Then ship it with discipline.</h1>
+          <p class="hero-text">
+            Truotek helps companies turn ambiguous software challenges into clear
+            plans, stronger systems, and working products delivered with control.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Start a conversation</a>
+            <a class="button button-secondary" href="#approach">See the approach</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <p class="panel-kicker">Current focus</p>
+          <ul class="signal-list">
+            <li>New product prototypes and MVPs</li>
+            <li>Internal tools that remove repetitive work</li>
+            <li>Codebase cleanup before the next growth phase</li>
+            <li>Fractional engineering support for small teams</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="section story-grid" id="services">
+        <div>
+          <p class="section-label">What Truotek can do</p>
+          <h2>Clear enough for strategy. Practical enough for delivery.</h2>
+        </div>
+
+        <div class="card-grid">
+          <article class="feature-card">
+            <p class="feature-number">01</p>
+            <h3>Product engineering</h3>
+            <p>
+              From early validation to production-ready features, with scope,
+              tradeoffs, and delivery kept visible throughout the process.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <p class="feature-number">02</p>
+            <h3>Technical problem solving</h3>
+            <p>
+              Untangling brittle systems, isolating bottlenecks, and creating
+              simpler paths forward when complexity starts slowing a team down.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <p class="feature-number">03</p>
+            <h3>Delivery support</h3>
+            <p>
+              Helping teams scope work realistically, reduce implementation risk,
+              and maintain momentum when priorities shift.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section approach-grid" id="approach">
+        <div class="approach-copy">
+          <p class="section-label">Approach</p>
+          <h2>Pragmatic consulting for teams that need clarity, not theater.</h2>
+          <p>
+            Truotek works in short loops, communicates directly, and favors
+            solutions that match the real business constraint. The goal is to
+            reduce ambiguity, avoid unnecessary complexity, and deliver outcomes
+            that hold up after launch.
+          </p>
+        </div>
+
+        <div class="approach-steps">
+          <article class="step-card">
+            <span>01</span>
+            <h3>Find the real problem</h3>
+            <p>
+              Separate symptoms from root causes so effort goes toward the work
+              that materially changes the outcome.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <span>02</span>
+            <h3>Choose an efficient path</h3>
+            <p>
+              Align scope, risk, and timeline before implementation starts to drift.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <span>03</span>
+            <h3>Ship something real</h3>
+            <p>
+              Deliver working software, concrete recommendations, or both. No
+              vague handoff disconnected from execution.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section focus-band">
+        <div>
+          <p class="section-label">Engagements</p>
+          <h2>Well suited for startups, small businesses, and teams in transition.</h2>
+        </div>
+
+        <div class="focus-points">
+          <p>Short advisory sprint</p>
+          <p>Hands-on build support</p>
+          <p>Architecture reset</p>
+          <p>Fractional engineering capacity</p>
+        </div>
+      </section>
+
+      <section class="section contact-card" id="contact">
+        <div>
+          <p class="section-label">Contact</p>
+          <h2>Have a software problem worth solving?</h2>
+          <p>
+            Truotek works with teams that need sharp technical judgment, reliable
+            execution, and a practical path from problem to delivery.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:hello@truotek.com">
+            hello@truotek.com
+          </a>
+          <p class="contact-note">
+            Email is the simplest place to start. A scheduling link can be added later.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Truotek</p>
+      <p>Software development consultancy</p>
+      <p>&copy; {year}</p>
+    </footer>
+  </div>
+</MainLayout>
